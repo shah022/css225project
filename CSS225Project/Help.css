@@ -133,7 +133,19 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 50%;
 	border: 1px solid rgb(1,135,74);
 	background-color: rgb(1,135,74);
+	padding: 5px;
+	border-radius: 15px;
+	font-family: 'Montserrat', sans-serif;
+	
 }
+.center h3{
+	margin: 5px;
+}
+.center p{
+	color: red;
+	margin: 4px;
+}
+
 #cont{
 	width: 500px;
 	height: 800px;
