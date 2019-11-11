@@ -128,12 +128,33 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 0px;
 }
 .center-part .center{
+	border-radius: 15px;
 	color: #fff;
 	margin: 0% 25%;
 	width: 50%;
 	border: 1px solid rgb(1,135,74);
 	background-color: rgb(1,135,74);
 }
+.center-part .center .center-top{
+	display: flex;
+	margin: 10px;
+}
+#apteka_photo{
+	height: 250px;
+}
+.infoAboutFarm{
+	margin: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+.infoAboutFarm h3{
+	font-size: 20px;
+	margin: 5px;
+}
+.center-bottom img{
+	margin: 2%;
+}
+
 #cont{
 	width: 500px;
 	height: 800px;
