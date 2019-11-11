@@ -128,15 +128,31 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 0px;
 }
 .center-part .center{
-	color: #fff;
 	margin: 0% 25%;
+	padding: 5px;
 	width: 50%;
 	border: 1px solid rgb(1,135,74);
 	background-color: rgb(1,135,74);
 }
-#cont{
-	width: 500px;
-	height: 800px;
+
+.search_part{
+	margin-left: 20%;
+}
+#searchIn{
+	width: 50%;
+	border-radius: 5px;
+	font-size: 16px;
+}
+#searchBot{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	background-color: rgb(1,135,74);
+}
+#searchBot:hover{
+	color: rgb(1,135,74);
+	background-color:#fff;
 }
 
 @media(max-width: 800px) and (min-width: 640px){
