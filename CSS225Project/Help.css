@@ -136,14 +136,33 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 5px;
 	border-radius: 15px;
 	font-family: 'Montserrat', sans-serif;
+	text-align: center;
 	
 }
 .center h3{
 	margin: 5px;
 }
 .center p{
-	color: red;
+	color: rgb(1,135,74);
 	margin: 4px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+.center .input100{
+	width: 60%;
+	font-size: 17px;
+	border-radius: 4px;
+	margin: 1%;
+}
+.submitBtn{
+	width: 60%;
+	font-size: 17px;
+	border-radius: 4px;
+	margin: 3%;
+	background-color: #fff;
+	color: rgb(1,135,74);
+	font-family: 'Montserrat', sans-serif;
 }
 
 #cont{
