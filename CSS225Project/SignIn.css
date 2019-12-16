@@ -1,80 +1,4 @@
-body, html{
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-a {
-	text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin: 0;
-	padding: 0;
-}
 
-.top-part{
-	width: 100%;
-	display: flex;
-	border: 1px solid rgb(1,135,74);
-	background-color: rgb(1,135,74);
-	align-items: center;
-	position: fixed;
-	top: 0px;
-	z-index: 5000;
-}
-
-#logo{
-	width: 180px;
-	height: 60px;
-}
-#logo_name{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 50px;
-	margin: 0 auto;
-	color: #fff;
-}
-#login, #register{
-	font-family: 'Montserrat', sans-serif;
-	
-	margin-right: 5px;
-	color: #fff;
-	border: 1px solid #fff;
-	padding: 10px;
-	border-radius: 5px;
-}
-#login:hover, #register:hover {
-	color: rgb(1,135,74);
-	background-color:#fff;
-}
-
-.center-part{
-	margin-top: 100px;
-	flex: 1 0 auto;
-}
-
-
-.contacts{
-	display: flex;
-	margin:0px;
-	padding:0px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-}
-.contacts p{
-	margin-left: 5px;
-}
-.bottom-part{
-	border: 1px solid #474747;
-	background-color: #474747;
-	color:#fff;
-	width: 100%;
-	flex: 0 0 auto;
-	margin: 0px;
-	margin-top: 5px;
-	padding: 0px;
-}
 .center-part .center{
 	color: #fff;
 	margin: 0 auto;
@@ -108,38 +32,35 @@ h1, h2, h3, h4, h5, h6, p {
 .center a{
 	color: #fff;
 }
-#cont{
-	width: 500px;
-	height: 800px;
-}
 
-@media(max-width: 800px) and (min-width: 640px){
-	#logo_name{
-		font-size: 30px;
+
+@media(max-width: 810px) and (min-width: 640px){
+	.center h3{
+		font-size: 22px;
 	}
-	#login, #register{
-		font-size: 10px;
+	.center .input100{
+		font-size: 14px;
+	}
+	.loginBtn{
+		font-size: 13px;
+	}
+	.center a{
+		font-size: 14px;
 	}
 	
 }
 @media(max-width: 640px){
-	#logo_name{
-		font-size: 25px;
+	.center h3{
+		font-size: 18px;
 	}
-	#login, #register{
-		font-size: 8px;
-		padding: 5px;
+	.center .input100{
+		font-size: 11px;
 	}
-	
-	.contacts{
+	.loginBtn{
 		font-size: 10px;
 	}
-	#logo{
-		width: 120px;
-		height: 40px;
-	}
-	.center-part{
-	margin-top: 55px;
+	.center a{
+		font-size: 11px;
 	}
 
 }

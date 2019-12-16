@@ -1,0 +1,111 @@
+
+.center-part{
+	text-align:center;
+	width: 50%;
+	margin: 0% 25%;
+	margin-top: 10%;
+}
+.center-part h3{
+	font-size: 24px;
+	margin: 5px;
+	color: rgb(1,135,74);
+	font-family: 'Lobster', cursive;
+}
+.AddToDB{
+	background-color: rgb(1,135,74);
+	padding: 15px;
+	margin:10px;
+}
+.AddToDB p{
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	margin:10px;
+}
+.ListOfDB{
+	background-color: rgb(1,135,74);
+	padding: 15px;
+	margin:10px;
+
+}
+.ListOfDB p{
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	margin:10px;
+}
+.list{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	width: 80%;
+	margin: 0% 10%;
+	text-align:justify;
+	padding: 5px;
+}
+#AddBtn{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 15px;
+	background-color: rgb(1,135,74);
+}
+#AddBtn:hover{
+	color: rgb(1,135,74);
+	background-color:#fff;
+}
+.deleteBtn{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 15px;
+	background-color: rgb(1,135,74);
+	float: right;
+	
+}
+.deleteBtn:hover{
+	color: rgb(1,135,74);
+	background-color:#fff;
+}
+#AddDrugName{
+	width: 40%;
+	border-radius: 5px;
+	font-size: 15px;
+}
+#AddDrugCost{
+	width: 25%;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.drugName, .drugCost{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	margin-left: 15px;
+}
+
+@media(max-width: 810px) and (min-width: 640px){
+	
+	.drugName, .drugCost, #AddBtn, #AddDrugName, #AddDrugCost, .deleteBtn{
+		font-size: 12px;
+	}
+	.center-part h3{
+		font-size: 20px;
+	}
+	.AddToDB p, .ListOfDB p{
+		font-size: 14px;
+	}
+}
+@media(max-width: 640px){
+	.drugName, .drugCost, #AddBtn, #AddDrugName, #AddDrugCost, .deleteBtn{
+		font-size: 9px;
+	}
+	.center-part h3{
+		font-size: 16px;
+	}
+	.AddToDB p, .ListOfDB p{
+		font-size: 12px;
+	}
+	.drugName, .drugCost{
+		margin-left: 5px;
+	}
+
+}
+

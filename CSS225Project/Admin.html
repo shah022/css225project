@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Войти</title>
+	<title>Admin Page</title>
 	<link href="index.css" rel="stylesheet" type="text/css"/>
-	<link href="SignIn.css" rel="stylesheet" type="text/css"/>
+	<link href="Admin.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Modak&display=swap&subset=devanagari,latin-ext" rel="stylesheet"> 
@@ -11,31 +11,23 @@
 </head>
 <body>
 	<div class="top-part"> 
-		
 		<img id="logo" src="img/logo.jpg">
 		<h1 id="logo_name">Health Care</h1>
-		<div class="log">
-			
-			<a href="SignUp.html" id="register">Зарегистрироваться<a>
-		</div>
-		
 	</div>
 	<div class="center-part">
-		
-		
-		<div class="center">
-			<h3>Войти</h3>
-			<form>
-				<input class="input100" type="text" name="username" placeholder="Логин"></br>
-				<input class="input100" type="password" name="pass" placeholder="Пороль"></br>
-				<button class="loginBtn">
-								Войти
-				</button></br>
-			</form>
-			<a href="Main.html">Вернуться на главную страницу</a>
+		<h3>Страница администратора</h3>
+		<div class = "AddToDB">
+			<p>Добавить лекарство в базу данных</p>
+			<input id="AddDrugName" type="text" name="AddDrugName" placeholder="Название лекарства">
+			<input id="AddDrugCost" type="number" name="AddDrugCost" placeholder="Цена">
+			<input id="AddBtn" type="button" name="AddBtn" value="Добавить">
 		</div>
-		
-		
+		<div class="ListOfDB">
+			<p>Список лекарств из базы данных</p>
+			<div class="list">
+				<span class="drugName">Ампициллин</span><span class="drugCost">130 тг</span><button class="deleteBtn">Удалить</button>
+			</div>
+		</div>
 	</div>
 	<div class="bottom-part">
 		<div class="contacts"><p>Контакты:</p><p>+7 705 833 93 02</p></div>
