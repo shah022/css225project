@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Онлайн помощь</title>
-	<link href="index.css" rel="stylesheet" type="text/css"/>
-	<link href="Help.css" rel="stylesheet" type="text/css"/>
+	<link href="css/index.css" rel="stylesheet" type="text/css"/>
+	<link href="css/Help.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Modak&display=swap&subset=devanagari,latin-ext" rel="stylesheet"> 
@@ -14,9 +15,8 @@
 		
 		<img id="logo" src="img/logo.jpg">
 		<h1 id="logo_name">Health Care</h1>
-		<div class="log">
-			<a href="SignIn.html" id="login">Войти<a>
-			<a href="SignUp.html" id="register">Зарегистрироваться<a>
+		<div class="log" id = "userlog">
+				
 		</div>
 		
 	</div>
@@ -39,23 +39,25 @@
 		
 		<div class="center">
 			<h3>Онлайн помощь! Звоните и получайте консультацию у врачей и фармацевтов.</h3>
-			<p>Заполните все поля чтобы мы могли связаться с вами!</p>
+			<p id="errorMes">Заполните все поля чтобы мы могли связаться с вами!</p>
 			<!--<span>Имя: </span>-->
-			<input class= "input100" type="text" name="name" placeholder="Имя"></br>
-			<!--<span>Фамилия: </span>-->
-			<input class= "input100" type="text" name="surname" placeholder="Фамилия"></br>
-			<!--<span>Номер телефона: </span>-->
-			<input class= "input100" type="tel" name="phone" placeholder="Номер телефона"></br>
-			<!--<span>Город: </span>-->
-			<input class= "input100" type="text" name="city" placeholder="Город"></br>
-			<!--<span>E-mail: </span>-->
-			<input class= "input100" type="email" name="email" placeholder="E-mail"></br>
-			<!--<span>Дата рождения: </span>-->
-			<!--<input type="date" name="dateOfBirth" placeholder="Дата рождения"></br>-->
-			<!--<input type="submit" name="submit">-->
-			<button class="submitBtn">
-							Отправить данные
-			</button>
+			<form id="mailForm">
+				<input class= "input100" id="name"type="text" name="name" placeholder="Имя"></br>
+				<!--<span>Фамилия: </span>-->
+				<input class= "input100" id="surname" type="text" name="surname" placeholder="Фамилия"></br>
+				<!--<span>Номер телефона: </span>-->
+				<input class= "input100" id="phone" type="tel" name="phone" placeholder="Номер телефона"></br>
+				<!--<span>Город: </span>-->
+				<input class= "input100" id="city" type="text" name="city" placeholder="Город"></br>
+				<!--<span>E-mail: </span>-->
+				<input class= "input100" id="email" type="email" name="email" placeholder="E-mail"></br>
+				<!--<span>Дата рождения: </span>-->
+				<!--<input type="date" name="dateOfBirth" placeholder="Дата рождения"></br>-->
+				<!--<input type="submit" name="submit">-->
+				<button type="button" id="sendMail"class="submitBtn">
+								Отправить данные
+				</button>
+			</form>
 		</div>
 		
 		<div class="right">
@@ -69,6 +71,10 @@
 		<div class="contacts"><p>Почта:</p><p>shah.022@bk.ru</p></div>
 		<div class="contacts"><p>Адрес компании:</p><p>Кызылординская область, поселок Жалагаш</p></div>
 	<div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/user.js"></script>
+	<script src="js/formMail.js"></script>
 </body>
 
 </html>

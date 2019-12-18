@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Admin Page</title>
-	<link href="index.css" rel="stylesheet" type="text/css"/>
-	<link href="Admin.css" rel="stylesheet" type="text/css"/>
+	<link href="css/index.css" rel="stylesheet" type="text/css"/>
+	<link href="css/Admin.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,500,900&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Modak&display=swap&subset=devanagari,latin-ext" rel="stylesheet"> 
@@ -18,14 +19,16 @@
 		<h3>Страница администратора</h3>
 		<div class = "AddToDB">
 			<p>Добавить лекарство в базу данных</p>
-			<input id="AddDrugName" type="text" name="AddDrugName" placeholder="Название лекарства">
-			<input id="AddDrugCost" type="number" name="AddDrugCost" placeholder="Цена">
-			<input id="AddBtn" type="button" name="AddBtn" value="Добавить">
+			<form action="php/add.php" method="post" name="form" id="form">
+				<input id="AddDrugName" type="text" name="AddDrugName" placeholder="Название лекарства">
+				<input id="AddDrugCost" type="number" name="AddDrugCost" placeholder="Цена">
+				<input id="AddBtn" type="submit" name="AddBtn" value="Добавить">
+			</form>
 		</div>
 		<div class="ListOfDB">
 			<p>Список лекарств из базы данных</p>
-			<div class="list">
-				<span class="drugName">Ампициллин</span><span class="drugCost">130 тг</span><button class="deleteBtn">Удалить</button>
+			<div class="list" id="list">
+				
 			</div>
 		</div>
 	</div>
@@ -34,6 +37,9 @@
 		<div class="contacts"><p>Почта:</p><p>shah.022@bk.ru</p></div>
 		<div class="contacts"><p>Адрес компании:</p><p>Кызылординская область, поселок Жалагаш</p></div>
 	<div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/listofdrugs.js"></script>
+	<script src="js/deleteBtn.js"></script>
 </body>
 
 </html>
