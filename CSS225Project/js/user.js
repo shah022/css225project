@@ -1,3 +1,4 @@
+
 $.ajax({
 		url: 'ajax/user.php',
 		type: 'POST',

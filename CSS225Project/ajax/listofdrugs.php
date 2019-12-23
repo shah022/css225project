@@ -10,7 +10,7 @@ $result=$mysql->query("SELECT * FROM `drug`");
     $id=$row['id'];
     
  
-    echo "<span class='drugName' id='drugName'>$drugname</span><span class='drugCost' id='drugCost'>$cost</span><button class='deleteBtn' id='deleteBtn' name='$id'>Удалить</button></br>";
+    echo "<span class='drugName' id='drugName'>$drugname</span><span class='drugCost' id='drugCost'>$cost тенге</span></br>";
     }
   $mysql->close();
 ?>

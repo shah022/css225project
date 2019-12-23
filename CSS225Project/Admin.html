@@ -25,6 +25,13 @@
 				<input id="AddBtn" type="submit" name="AddBtn" value="Добавить">
 			</form>
 		</div>
+		<div class = "DeleteFromDB">
+			<p>Удалить лекарство из базы данных</p>
+			<form action="php/delete.php" method="post" name="form" id="form">
+				<input id="DeleteDrugName" type="text" name="DeleteDrugName" placeholder="Название лекарства">
+				<input id="DelBtn" type="submit" name="DelBtn" value="Удалить">
+			</form>
+		</div>
 		<div class="ListOfDB">
 			<p>Список лекарств из базы данных</p>
 			<div class="list" id="list">
@@ -39,7 +46,8 @@
 	<div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/listofdrugs.js"></script>
-	<script src="js/deleteBtn.js"></script>
+	<!--<script src="js/deleteBtn.js"></script>-->
+
 </body>
 
 </html>
